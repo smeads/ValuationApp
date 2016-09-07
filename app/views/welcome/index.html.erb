@@ -1,2 +1,44 @@
-<h1>Valuation Calculator</h1>
-<p>Get a quick and dirty valuation of your biz</p>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Valuation Calculator</h1>
+    <p>Get a quick and dirty valuation of your biz</p>
+  </div>
+  <h3>Enter information here</h3>
+  <%= form_for :valuation do |f| %>
+    <p>
+      <%= f.label :preferred %><br>
+      <%= f.text_field :preferred %>
+    </p>
+    <p>
+      <%= f.label :participating %><br>
+      <%= f.text_field :participating %>
+    </p>
+    <p>
+      <%= f.label :participation_cap %><br>
+      <%= f.text_field :participation_cap %>
+    </p>
+    <p>
+      <%= f.label :what_is_the_multiple %><br>
+      <%= f.text_field :what_is_the_multiple %>
+    </p>
+    <p>
+      <%= f.label :cumulative_dividend %><br>
+      <%= f.text_field :cumulative_dividend %>
+    </p>
+    <p>
+      <%= f.label :what_percent_dividend %><br>
+      <%= f.text_field :what_percent_dividend %>
+    </p>
+    <p>
+      <%= f.label :premoney %><br>
+      <%= f.text_field :premoney %>
+    </p>
+    <p>
+      <%= f.label :postmoney %><br>
+      <%= f.text_field :postmoney %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  </div>
+<% end %>
